@@ -1,0 +1,361 @@
+/* --------------------------------- utility -------------------------------- */
+* {
+  line-height: 1;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type:none
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.red {
+  color: var(--red);
+}
+
+/* -------------------------------- / utility ------------------------------- */
+
+
+/* -------------------------------- variables ------------------------------- */
+:root {
+  --red: #C00000;
+  --gray: #e7e6e6;
+  --gray_dark: #808080;
+}
+/* ------------------------------- / variables ------------------------------ */
+
+
+/* ---------------------------------- logo ---------------------------------- */
+.header__logo {
+  display: flex;
+  max-width: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.container__logo {
+  margin-top: 20px;
+  margin-bottom: 120px;
+}
+
+@media screen and (max-width: 700px) {
+  .container__logo {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+}
+/* --------------------------------- / logo --------------------------------- */
+
+
+/* ---------------------------------- hero ---------------------------------- */
+/* - who */
+.container__hero {
+  margin-bottom: 40px;
+}
+
+.inner__who {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+
+.hero__who {
+  margin-right: 80px;
+}
+
+.inner__who li {
+  padding-bottom: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* - counts */
+.inner__counts {
+  max-width: 620px;
+  margin: 0 auto 50px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 700px) {
+  .inner__who {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .inner__counts {
+    flex-direction: column;
+    text-align: center;
+  }
+  .inner__counts span {
+    margin-bottom: 10px;
+  }
+  .hero__who {
+    margin-right: 5vw;
+  }
+}
+
+/* - promo */
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.promo__text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+
+}
+
+.promo__img {
+  max-width: 100%;
+  /* object-fit: contain; */
+  /* object-position: center; */
+  margin: 0 auto;
+}
+/* --------------------------------- / hero --------------------------------- */
+
+
+/* -------------------------------- materials ------------------------------- */
+.container__materials {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--gray);
+}
+
+.materials__title {
+  text-align: center;
+  margin-top: 0;
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.materials__table {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.materials__table td {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.materials__table td:first-child {
+  padding-right: 100px;
+}
+
+@media screen and (max-width: 630px) {
+  .materials__table td:first-child {
+    padding-right: 20px;
+  }
+}
+/* ------------------------------- / materials ------------------------------ */
+
+/* --------------------------------- scketch -------------------------------- */
+.container__scketch {
+  margin-bottom: 30px;
+}
+
+.scketch__inner_scketch {
+  margin-bottom: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.scketch__img {
+  width: 75%;
+}
+
+.scetch__warranty {
+  width: 25%;
+}
+
+.scketch__inner_desc {
+  margin-bottom: 20px;
+  padding: 20px 10px;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  background-color: var(--gray);
+}
+
+.scketch__inner_images {
+  display: flex;
+  flex-direction: column;
+}
+
+.scketch__inner_images > li {
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .scketch__inner_scketch {
+    flex-direction: column;
+    justify-content: center;
+    /* margin: 0 auto; */
+    /* flex-direction: row-reverse */
+  }
+  .scketch__img {
+    width: 100%;
+    order: 2;
+    text-align: center;
+  }
+  .scetch__warranty {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+/* -------------------------------- / scketch ------------------------------- */
+
+/* ----------------------------------- 123 ---------------------------------- */
+.main__title {
+  margin: 0;
+  font-size: 22px;
+  text-align: center;
+  background-color: var(--gray);
+  text-transform: uppercase;
+}
+
+.prices__contacts {
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 20px;
+}
+
+.contacts__seller {
+  width: 50%;
+  border-right: 2px solid var(--gray)
+}
+
+.contacts__seller td:first-child{
+  padding-right: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.contacts__customer {
+  width: 50%;
+  text-align: right;
+  border-left: 2px solid var(--gray);
+}
+
+.contacts__customer td:last-child{
+  padding-left: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .prices__contacts{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contacts__seller {
+    width: 100%;
+    border: none;
+  }
+  .contacts__seller td{
+    width: 50%;
+  }
+
+  .contacts__customer {
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+  }
+  .contacts__customer tr {
+    display: flex;
+  }
+  .contacts__customer td{
+    width: 50%;
+  }
+  .contacts__customer td:first-child {
+    order: 2;
+  }
+  .contacts__customer td:last-child {
+    order: 1;
+    padding-left: 0;
+  }
+}
+
+/* --------------------------------- / 123 ---------------------------------- */
+
+
+/* --------------------------- prices of furniture -------------------------- */
+.prices__furniture {
+  width: 100%;
+}
+
+.prices__furniture th {
+  font-weight: 400;
+}
+
+.th__gray_invers {
+  padding: 10px 15px;
+  background-color: var(--gray_dark);
+  color: white;
+  text-align: center;
+}
+
+.furniture__small {
+  font-size: 13px;
+}
+
+.furniture__cost td:not(:first-child) {
+  padding: 10px 15px;
+}
+
+.furniture__cost td:not(:first-child){
+  text-align: center;
+}
+
+.furniture__discount td:not(:first-child){
+  text-align: center;
+}
+
+.furniture__discount td:last-child{
+  text-align: center;
+  padding-left: 30px;
+}
+
+.prices__furniture th:first-child {
+  padding-right: 19.5vw;
+}
+
+/* -------------------------- / prices of furniture ------------------------- */
